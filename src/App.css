@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +26,24 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.signUpForm {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.signUpForm input{
+  display : block;
+  margin-bottom: 5px;
+  width: 300px;
+  height: 20px;
+}
+
+.submitButton {
+  width: 100px !important;
+  background-color: aqua;
+  border: 0px;
 }
 
 @keyframes App-logo-spin {
