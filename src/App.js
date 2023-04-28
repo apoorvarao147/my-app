@@ -1,25 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Header from './Header'; 
+import Gadha from './Footer';
+import SignUp from './SignUp';
+import Project from './Project'; 
 function App() {
+  const url = "https://api.emissionshelp.com/api/v1/project/proj_167639093013210"
   return (
     // JSX
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          Maine bnayi hai ji!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Project data={url}/>
+      <SignUp/>
+      <Gadha/>
     </div>
   );
 }
